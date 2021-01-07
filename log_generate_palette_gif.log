@@ -1,0 +1,737 @@
+ffmpeg version n4.3.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 10.2.0 (GCC)
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-amf --enable-avisynth --enable-cuda-llvm --enable-lto --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libdrm --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libjack --enable-libmfx --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-librav1e --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxml2 --enable-libxvid --enable-nvdec --enable-nvenc --enable-shared --enable-version3
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument '/tmp/KritaFFmpegProgress.JFJlPp'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '50'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument '/home/simson/Documents/Blender-Projects/FSDC/frame%04d.png'.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'palettegen'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option '/home/simson/Documents/Blender-Projects/FSDC/palette.png' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument /tmp/KritaFFmpegProgress.JFJlPp.
+[file @ 0x5653d8f28e40] Setting default whitelist 'file,crypto,data'
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url /home/simson/Documents/Blender-Projects/FSDC/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 50.
+Successfully parsed a group of options.
+Opening an input file: /home/simson/Documents/Blender-Projects/FSDC/frame%04d.png.
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0000.png' for reading
+[file @ 0x5653d8f2d500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d8f37ec0] Statistics: 831011 bytes read, 0 seeks
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0001.png' for reading
+[file @ 0x5653d8f36c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d8f36f00] Statistics: 844900 bytes read, 0 seeks
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0002.png' for reading
+[file @ 0x5653d8f36d80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d8f37500] Statistics: 838782 bytes read, 0 seeks
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0003.png' for reading
+[file @ 0x5653d8f378c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d8f37c40] Statistics: 794975 bytes read, 0 seeks
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0004.png' for reading
+[file @ 0x5653d8f30340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d8f37880] Statistics: 730061 bytes read, 0 seeks
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0005.png' for reading
+[file @ 0x5653d8f30600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d8f307c0] Statistics: 622961 bytes read, 0 seeks
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0006.png' for reading
+[file @ 0x5653d8f30b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d8f30c80] Statistics: 698620 bytes read, 0 seeks
+[image2 @ 0x5653d8f293c0] Probe buffer size limit of 5000000 bytes reached
+Input #0, image2, from '/home/simson/Documents/Blender-Projects/FSDC/frame%04d.png':
+  Duration: 00:00:06.44, start: 0.000000, bitrate: N/A
+    Stream #0:0, 7, 1/25: Video: png, 1 reference frame, rgba64be(pc), 768x768 [SAR 3937:3937 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url /home/simson/Documents/Blender-Projects/FSDC/palette.png.
+Applying option vf (set video filters) with argument palettegen.
+Successfully parsed a group of options.
+Opening an output file: /home/simson/Documents/Blender-Projects/FSDC/palette.png.
+Successfully opened the file.
+detected 4 logical cores
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> png (native))
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 4 times
+[graph 0 input from stream 0:0 @ 0x5653d8f36d80] Setting 'video_size' to value '768x768'
+[graph 0 input from stream 0:0 @ 0x5653d8f36d80] Setting 'pix_fmt' to value '106'
+[graph 0 input from stream 0:0 @ 0x5653d8f36d80] Setting 'time_base' to value '1/50'
+[graph 0 input from stream 0:0 @ 0x5653d8f36d80] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 0x5653d8f36d80] Setting 'frame_rate' to value '50/1'
+[graph 0 input from stream 0:0 @ 0x5653d8f36d80] w:768 h:768 pixfmt:rgba64be tb:1/50 fr:50/1 sar:3937/3937
+[format @ 0x5653d8fc5200] Setting 'pix_fmts' to value 'rgb24|rgba|rgb48be|rgba64be|pal8|gray|ya8|gray16be|ya16be|monob'
+[auto_scaler_0 @ 0x5653d8fc6dc0] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 0x5653d8fc6dc0] w:iw h:ih flags:'bicubic' interl:0
+[Parsed_palettegen_0 @ 0x5653d8f42ac0] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_palettegen_0'
+[auto_scaler_1 @ 0x5653d8fc9300] Setting 'flags' to value 'bicubic'
+[auto_scaler_1 @ 0x5653d8fc9300] w:iw h:ih flags:'bicubic' interl:0
+[format @ 0x5653d8fc5200] auto-inserting filter 'auto_scaler_1' between the filter 'Parsed_palettegen_0' and the filter 'format'
+[AVFilterGraph @ 0x5653d8f41e40] query_formats: 4 queried, 1 merged, 2 already done, 0 delayed
+[auto_scaler_1 @ 0x5653d8fc9300] picking rgba out of 10 ref:bgra alpha:1
+[swscaler @ 0x5653d8fca800] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 0x5653d8fc6dc0] w:768 h:768 fmt:rgba64be sar:3937/3937 -> w:768 h:768 fmt:bgra sar:1/1 flags:0x4
+[swscaler @ 0x5653d9005fc0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 0x5653d8fc9300] w:16 h:16 fmt:bgra sar:1/1 -> w:16 h:16 fmt:rgba sar:1/1 flags:0x4
+Output #0, image2, to '/home/simson/Documents/Blender-Projects/FSDC/palette.png':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/50: Video: png, 1 reference frame, rgba, 16x16 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 50 fps, 50 tbn, 50 tbc
+    Metadata:
+      encoder         : Lavc58.91.100 png
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 2 times
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0007.png' for reading
+[file @ 0x5653d93ad240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ad340] Statistics: 747116 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0008.png' for reading
+[file @ 0x5653d93add00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ade00] Statistics: 774041 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0009.png' for reading
+[file @ 0x5653d93adc40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ae080] Statistics: 784590 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0010.png' for reading
+[file @ 0x5653d93ae880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af440] Statistics: 806432 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0011.png' for reading
+[file @ 0x5653d93aeb00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af9c0] Statistics: 816679 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0012.png' for reading
+[file @ 0x5653d93aeb00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93b0200] Statistics: 809708 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0013.png' for reading
+[file @ 0x5653d93b01c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af480] Statistics: 763756 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0014.png' for reading
+[file @ 0x5653d93b01c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93b02c0] Statistics: 695358 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0015.png' for reading
+[file @ 0x5653d93b0540] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93b0640] Statistics: 576289 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0016.png' for reading
+[file @ 0x5653d93aeb00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af440] Statistics: 657602 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0017.png' for reading
+[file @ 0x5653d93aeb00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ae940] Statistics: 714822 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0018.png' for reading
+[file @ 0x5653d93ae880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ae980] Statistics: 747912 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0019.png' for reading
+[file @ 0x5653d95a9a80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d95a9b80] Statistics: 760564 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0020.png' for reading
+[file @ 0x5653d95a9d40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ac780] Statistics: 789026 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0021.png' for reading
+[file @ 0x5653d95a9d40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d95a9e40] Statistics: 801128 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0022.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709280] Statistics: 796706 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0023.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709380] Statistics: 751863 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0024.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709880] Statistics: 689409 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0025.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 582140 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0026.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 677703 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0027.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709800] Statistics: 738756 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0028.png' for reading
+[file @ 0x5653d9709800] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 771304 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0029.png' for reading
+[file @ 0x5653d93aca40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709800] Statistics: 782658 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0030.png' for reading
+[file @ 0x5653d93aca40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709840] Statistics: 809681 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0031.png' for reading
+[file @ 0x5653d93aca40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709800] Statistics: 825731 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0032.png' for reading
+[file @ 0x5653d93ae880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709800] Statistics: 824708 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0033.png' for reading
+[file @ 0x5653d9709800] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 786491 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0034.png' for reading
+[file @ 0x5653d96f05c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97098c0] Statistics: 724803 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0035.png' for reading
+[file @ 0x5653d96f0a80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0600] Statistics: 627828 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0036.png' for reading
+[file @ 0x5653d96f0a80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af440] Statistics: 715428 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0037.png' for reading
+[file @ 0x5653d96f0a80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af440] Statistics: 768854 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0038.png' for reading
+[file @ 0x5653d93af440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af540] Statistics: 795830 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0039.png' for reading
+[file @ 0x5653d97097c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97098c0] Statistics: 807708 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0040.png' for reading
+[file @ 0x5653d97097c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96efec0] Statistics: 831091 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0041.png' for reading
+[file @ 0x5653d97097c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97098c0] Statistics: 844517 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0042.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af440] Statistics: 838262 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0043.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93af480] Statistics: 795134 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0044.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 730294 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0045.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709800] Statistics: 623541 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0046.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 698733 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0047.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 747249 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0048.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 773997 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0049.png' for reading
+[file @ 0x5653d97097c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0100] Statistics: 784321 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0050.png' for reading
+[file @ 0x5653d93aca40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 806327 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0051.png' for reading
+[file @ 0x5653d93aca40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 816910 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0052.png' for reading
+[file @ 0x5653d93aca40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97097c0] Statistics: 808795 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0053.png' for reading
+[file @ 0x5653d93aca40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d97098c0] Statistics: 763644 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0054.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 694405 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0055.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 576757 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0056.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 657350 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0057.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 714558 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0058.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 748261 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0059.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 761459 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0060.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0000] Statistics: 788420 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0061.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0c00] Statistics: 801352 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0062.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f1480] Statistics: 796313 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0063.png' for reading
+[file @ 0x5653d96f0a80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f1480] Statistics: 752663 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0064.png' for reading
+[file @ 0x5653d93ad880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f05c0] Statistics: 689243 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0065.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f05c0] Statistics: 585902 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0066.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0600] Statistics: 677817 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0067.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 738581 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0068.png' for reading
+[file @ 0x5653d93af580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9709900] Statistics: 772317 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0069.png' for reading
+[file @ 0x5653d93af580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0100] Statistics: 783326 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0070.png' for reading
+[file @ 0x5653d93af580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0100] Statistics: 809587 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0071.png' for reading
+[file @ 0x5653d93af580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0100] Statistics: 826373 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0072.png' for reading
+[file @ 0x5653d93af580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ae000] Statistics: 824578 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0073.png' for reading
+[file @ 0x5653d93af580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0580] Statistics: 786631 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0074.png' for reading
+[file @ 0x5653d96f0580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0f00] Statistics: 726155 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0075.png' for reading
+[file @ 0x5653d96f22c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0580] Statistics: 629921 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0076.png' for reading
+[file @ 0x5653d96f1d40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0000] Statistics: 714785 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0077.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 768816 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0078.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 796213 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0079.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0f80] Statistics: 806736 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0080.png' for reading
+[file @ 0x5653d96f0a80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0ec0] Statistics: 831228 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0081.png' for reading
+[file @ 0x5653d96f0a80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f2240] Statistics: 831142 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0082.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f1880] Statistics: 831080 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0083.png' for reading
+[file @ 0x5653d96f1c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0ec0] Statistics: 830634 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0084.png' for reading
+[file @ 0x5653d96f1c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0f80] Statistics: 831258 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0085.png' for reading
+[file @ 0x5653d96f1c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0ec0] Statistics: 831582 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0086.png' for reading
+[file @ 0x5653d96f1c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ac780] Statistics: 831712 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0087.png' for reading
+[file @ 0x5653d96f1c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ac780] Statistics: 831330 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0088.png' for reading
+[file @ 0x5653d96f1c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d93ac780] Statistics: 831329 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0089.png' for reading
+[file @ 0x5653d96f1c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0ec0] Statistics: 830931 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0090.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f1cc0] Statistics: 831800 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0091.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0ec0] Statistics: 832055 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0092.png' for reading
+[file @ 0x5653d93ac7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f1cc0] Statistics: 832600 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0093.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f1cc0] Statistics: 832646 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0094.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 832569 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0095.png' for reading
+[file @ 0x5653d96f0580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0ec0] Statistics: 834054 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0096.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 834645 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0097.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 836630 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0098.png' for reading
+[file @ 0x5653d93b0040] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0ec0] Statistics: 837251 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0099.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 837625 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0100.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 840183 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0101.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 841426 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0102.png' for reading
+[file @ 0x5653d96f0ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 841873 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0103.png' for reading
+[file @ 0x5653d96f1900] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0f00] Statistics: 844402 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0104.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0ec0] Statistics: 844003 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0105.png' for reading
+[file @ 0x5653d93afa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 846665 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0106.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 851042 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0107.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 863270 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0108.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 886806 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0109.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 907343 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0110.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 931787 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0111.png' for reading
+[file @ 0x5653d9709b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f0fc0] Statistics: 965853 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0112.png' for reading
+[file @ 0x5653d96f2000] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f2100] Statistics: 1010508 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0113.png' for reading
+[file @ 0x5653d96f2180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f30c0] Statistics: 1072950 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0114.png' for reading
+[file @ 0x5653d96f2840] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f3700] Statistics: 1134153 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0115.png' for reading
+[file @ 0x5653d96f4700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f4b00] Statistics: 1185904 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0116.png' for reading
+[file @ 0x5653d96f7f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96f8080] Statistics: 1192339 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0117.png' for reading
+[file @ 0x5653d96fc9c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96fcac0] Statistics: 1148215 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0118.png' for reading
+[file @ 0x5653d9700c40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9700d40] Statistics: 1031343 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0119.png' for reading
+[file @ 0x5653d9705000] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9705100] Statistics: 918086 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0120.png' for reading
+[file @ 0x5653d95a9840] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d95a9940] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0121.png' for reading
+[file @ 0x5653d96a7c40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96a7d40] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0122.png' for reading
+[file @ 0x5653d96adcc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96addc0] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0123.png' for reading
+[file @ 0x5653d96b5b80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96b5c80] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0124.png' for reading
+[file @ 0x5653d96c0f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96c1080] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0125.png' for reading
+[file @ 0x5653d96d3980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96d3a80] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0126.png' for reading
+[file @ 0x5653d96d9200] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96d9300] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0127.png' for reading
+[file @ 0x5653d96d3d40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96d94c0] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0128.png' for reading
+[file @ 0x5653d96d9700] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96d9800] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0129.png' for reading
+[file @ 0x5653d95999c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9599ac0] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0130.png' for reading
+[file @ 0x5653d9599d00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9599e00] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0131.png' for reading
+[file @ 0x5653d9599fc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a0c0] Statistics: 667235 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0132.png' for reading
+[file @ 0x5653d9599fc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96d9300] Statistics: 667235 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0133.png' for reading
+[file @ 0x5653d959a0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96d9500] Statistics: 666991 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0134.png' for reading
+[file @ 0x5653d959a100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a200] Statistics: 667071 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0135.png' for reading
+[file @ 0x5653d959a100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d9599b80] Statistics: 666959 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0136.png' for reading
+[file @ 0x5653d959a100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a200] Statistics: 667428 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0137.png' for reading
+[file @ 0x5653d959a100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d96d3a40] Statistics: 667219 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0138.png' for reading
+[file @ 0x5653d959a100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a200] Statistics: 667087 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0139.png' for reading
+[file @ 0x5653d959a100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a540] Statistics: 667087 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0140.png' for reading
+[file @ 0x5653d959a680] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a200] Statistics: 667319 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0141.png' for reading
+[file @ 0x5653d96d9380] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959ab00] Statistics: 667261 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0142.png' for reading
+[file @ 0x5653d959a400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a8c0] Statistics: 667182 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0143.png' for reading
+[file @ 0x5653d959af80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b080] Statistics: 667254 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0144.png' for reading
+[file @ 0x5653d959a940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b0c0] Statistics: 667248 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0145.png' for reading
+[file @ 0x5653d959a940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a2c0] Statistics: 667392 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0146.png' for reading
+[file @ 0x5653d959afc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959a2c0] Statistics: 667392 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0147.png' for reading
+[file @ 0x5653d959abc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b080] Statistics: 667502 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0148.png' for reading
+[file @ 0x5653d959aa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b100] Statistics: 667281 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0149.png' for reading
+[file @ 0x5653d959aa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b080] Statistics: 667258 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0150.png' for reading
+[file @ 0x5653d959b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959aac0] Statistics: 667388 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0151.png' for reading
+[file @ 0x5653d959b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959aac0] Statistics: 667172 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0152.png' for reading
+[file @ 0x5653d959aa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959ab80] Statistics: 667181 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0153.png' for reading
+[file @ 0x5653d959aa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959ab80] Statistics: 667317 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0154.png' for reading
+[file @ 0x5653d959aa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959bbc0] Statistics: 667317 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0155.png' for reading
+[file @ 0x5653d959aa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959bbc0] Statistics: 666995 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0156.png' for reading
+[file @ 0x5653d984fac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959aa80] Statistics: 667152 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0157.png' for reading
+[file @ 0x5653d959bfc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b840] Statistics: 666959 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0158.png' for reading
+[file @ 0x5653d959c000] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b980] Statistics: 667187 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0159.png' for reading
+[file @ 0x5653d959aa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b940] Statistics: 667187 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x5653d8f293c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0160.png' for reading
+[file @ 0x5653d959aa80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959b940] Statistics: 667113 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 4 times
+[Parsed_palettegen_0 @ 0x5653d8f42ac0] 255(+1) colors generated out of 12450 colors; ratio=0.020482
+[Parsed_palettegen_0 @ 0x5653d8f42ac0] Dupped color: FF33C5E1
+[Parsed_palettegen_0 @ 0x5653d8f42ac0] Dupped color: FF77786D
+[Parsed_palettegen_0 @ 0x5653d8f42ac0] Dupped color: FFB4B5AB
+[Parsed_palettegen_0 @ 0x5653d8f42ac0] Dupped color: FFBBBCB2
+[Parsed_palettegen_0 @ 0x5653d8f42ac0] Dupped color: FFCCCCC4
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+Clipping frame in rate conversion by 0.000008
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[out_0_0 @ 0x5653d8fc4f80] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+[image2 @ 0x5653d8f31280] Opening '/home/simson/Documents/Blender-Projects/FSDC/palette.png' for writing
+[file @ 0x5653d959b880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x5653d959ca80] Statistics: 0 seeks, 1 writeouts
+frame=    1 fps=0.2 q=-0.0 Lsize=N/A time=00:00:00.02 bitrate=N/A speed=0.00396x    
+[AVIOContext @ 0x5653d8f29240] Statistics: 0 seeks, 10 writeouts
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (/home/simson/Documents/Blender-Projects/FSDC/frame%04d.png):
+  Input stream #0:0 (video): 161 packets read (123343474 bytes); 161 frames decoded; 
+  Total: 161 packets (123343474 bytes) demuxed
+Output file #0 (/home/simson/Documents/Blender-Projects/FSDC/palette.png):
+  Output stream #0:0 (video): 1 frames encoded; 1 packets muxed (962 bytes); 
+  Total: 1 packets (962 bytes) muxed
+161 frames successfully decoded, 0 decoding errors

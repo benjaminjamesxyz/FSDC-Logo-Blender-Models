@@ -1,0 +1,763 @@
+ffmpeg version n4.3.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 10.2.0 (GCC)
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-amf --enable-avisynth --enable-cuda-llvm --enable-lto --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libdrm --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libjack --enable-libmfx --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-librav1e --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxml2 --enable-libxvid --enable-nvdec --enable-nvenc --enable-shared --enable-version3
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument '/tmp/KritaFFmpegProgress.eYgQLk'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '50'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument '/home/simson/Documents/Blender-Projects/FSDC/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument '/home/simson/Documents/Blender-Projects/FSDC/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument '[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option '/home/simson/Documents/Blender-Projects/FSDC/Evee.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument /tmp/KritaFFmpegProgress.eYgQLk.
+[file @ 0x563198e66f80] Setting default whitelist 'file,crypto,data'
+Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url /home/simson/Documents/Blender-Projects/FSDC/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 50.
+Successfully parsed a group of options.
+Opening an input file: /home/simson/Documents/Blender-Projects/FSDC/frame%04d.png.
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0000.png' for reading
+[file @ 0x563198e6b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x563198e6b600] Statistics: 831011 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0001.png' for reading
+[file @ 0x563198e6e780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x563198e6e9c0] Statistics: 844900 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0002.png' for reading
+[file @ 0x563198e6ed80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x563198e6efc0] Statistics: 838782 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0003.png' for reading
+[file @ 0x563198e6f380] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x563198e6f5c0] Statistics: 794975 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0004.png' for reading
+[file @ 0x563198e6f980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x563198e6fa80] Statistics: 730061 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0005.png' for reading
+[file @ 0x563198e6fe40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x563198e6ff40] Statistics: 622961 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0006.png' for reading
+[file @ 0x563198e6f940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x563198e80640] Statistics: 698620 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Probe buffer size limit of 5000000 bytes reached
+Input #0, image2, from '/home/simson/Documents/Blender-Projects/FSDC/frame%04d.png':
+  Duration: 00:00:06.44, start: 0.000000, bitrate: N/A
+    Stream #0:0, 7, 1/25: Video: png, 1 reference frame, rgba64be(pc), 768x768 [SAR 3937:3937 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url /home/simson/Documents/Blender-Projects/FSDC/palette.png.
+Successfully parsed a group of options.
+Opening an input file: /home/simson/Documents/Blender-Projects/FSDC/palette.png.
+[NULL @ 0x563198e79140] Opening '/home/simson/Documents/Blender-Projects/FSDC/palette.png' for reading
+[file @ 0x563198e6e000] Setting default whitelist 'file,crypto,data'
+[png_pipe @ 0x563198e79140] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 0x563198e79140] Before avformat_find_stream_info() pos: 0 bytes read:962 seeks:0 nb_streams:1
+[png_pipe @ 0x563198e79140] After avformat_find_stream_info() pos: 962 bytes read:962 seeks:0 frames:1
+Input #1, png_pipe, from '/home/simson/Documents/Blender-Projects/FSDC/palette.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url /home/simson/Documents/Blender-Projects/FSDC/Evee.gif.
+Successfully parsed a group of options.
+Opening an output file: /home/simson/Documents/Blender-Projects/FSDC/Evee.gif.
+[file @ 0x563198e70780] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 4 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 17 times
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0007.png' for reading
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[file @ 0x7fdf7c000d40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c009200] Statistics: 747116 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0008.png' for reading
+[file @ 0x7fdf7c001380] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0016c0] Statistics: 774041 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0009.png' for reading
+[file @ 0x7fdf7c001a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c001d40] Statistics: 784590 bytes read, 0 seeks
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0010.png' for reading
+[file @ 0x7fdf7c002000] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c002300] Statistics: 806432 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x563198e675c0] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0011.png' for reading
+[file @ 0x7fdf7c0025c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c002140] Statistics: 816679 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0012.png' for reading
+[file @ 0x7fdf7c002ac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c002700] Statistics: 809708 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0013.png' for reading
+[file @ 0x7fdf7c002e00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003100] Statistics: 763756 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 1 times
+[graph 0 input from stream 0:0 @ 0x563198f577c0] Setting 'video_size' to value '768x768'
+[graph 0 input from stream 0:0 @ 0x563198f577c0] Setting 'pix_fmt' to value '106'
+[graph 0 input from stream 0:0 @ 0x563198f577c0] Setting 'time_base' to value '1/50'
+[graph 0 input from stream 0:0 @ 0x563198f577c0] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 0x563198f577c0] Setting 'frame_rate' to value '50/1'
+[graph 0 input from stream 0:0 @ 0x563198f577c0] w:768 h:768 pixfmt:rgba64be tb:1/50 fr:50/1 sar:3937/3937
+[graph 0 input from stream 1:0 @ 0x563198f57e80] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 0x563198f57e80] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 0x563198f57e80] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 0x563198f57e80] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 0x563198f57e80] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 0x563198f57e80] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1
+[format @ 0x563198ed4b40] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 0x563198f5a500] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0x563198ed56c0] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 0x563198f5c000] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0x563198ed56c0] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 0x563198ed47c0] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 0x563198f5d640] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 0x563198f5a500] w:768 h:768 fmt:rgba64be sar:3937/3937 -> w:768 h:768 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 0x563198f98e00] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 0x563198f5c000] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 0x563198ed56c0] [framesync @ 0x563198ed57c8] Selected 1/50 time base
+[Parsed_paletteuse_0 @ 0x563198ed56c0] [framesync @ 0x563198ed57c8] Sync level 2
+Output #0, gif, to '/home/simson/Documents/Blender-Projects/FSDC/Evee.gif':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8, 768x768 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 50 fps, 100 tbn, 50 tbc (default)
+    Metadata:
+      encoder         : Lavc58.91.100 gif
+Clipping frame in rate conversion by 0.000008
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0014.png' for reading
+[file @ 0x7fdf7c0033c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c002f40] Statistics: 695358 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0015.png' for reading
+[file @ 0x7fdf7c0038c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003a40] Statistics: 576289 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;74) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0016.png' for reading
+[file @ 0x7fdf7c003c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004040] Statistics: 657602 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0017.png' for reading
+[file @ 0x7fdf7c004040] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004140] Statistics: 714822 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0018.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0042c0] Statistics: 747912 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0019.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004000] Statistics: 760564 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0020.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0046c0] Statistics: 789026 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0021.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004700] Statistics: 801128 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+frame=    9 fps=0.0 q=-0.0 size=     256kB time=00:00:00.17 bitrate=12336.2kbits/s speed=0.323x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0022.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0046c0] Statistics: 796706 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0023.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004940] Statistics: 751863 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0024.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c001bc0] Statistics: 689409 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0025.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c001b40] Statistics: 582140 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;74) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0026.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004ac0] Statistics: 677703 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0027.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004d80] Statistics: 738756 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0028.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004d80] Statistics: 771304 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0029.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004d80] Statistics: 782658 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 425x545 image at pos (169;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0030.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c004e80] Statistics: 809681 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+frame=   18 fps= 17 q=-0.0 size=     512kB time=00:00:00.35 bitrate=11983.7kbits/s speed=0.338x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0031.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005140] Statistics: 825731 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0032.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005140] Statistics: 824708 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0033.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005180] Statistics: 786491 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0034.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005180] Statistics: 724803 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0035.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005140] Statistics: 627828 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;74) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0036.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005140] Statistics: 715428 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0037.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005140] Statistics: 768854 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0038.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005180] Statistics: 795830 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0039.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0051c0] Statistics: 807708 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 425x545 image at pos (169;101) [area:768x768]
+frame=   27 fps= 17 q=-0.0 size=    1024kB time=00:00:00.53 bitrate=15827.6kbits/s speed=0.342x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0040.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005200] Statistics: 831091 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0041.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005240] Statistics: 844517 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0042.png' for reading
+[file @ 0x7fdf7c003f00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005280] Statistics: 838262 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0043.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005400] Statistics: 795134 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0044.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005400] Statistics: 730294 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0045.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005340] Statistics: 623541 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;74) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0046.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 698733 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0047.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005480] Statistics: 747249 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0048.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005580] Statistics: 773997 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+frame=   36 fps= 17 q=-0.0 size=    1280kB time=00:00:00.71 bitrate=14768.7kbits/s speed=0.342x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0049.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005500] Statistics: 784321 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0050.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005500] Statistics: 806327 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0051.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005600] Statistics: 816910 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0052.png' for reading
+[file @ 0x7fdf7c0054c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005700] Statistics: 808795 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0053.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005500] Statistics: 763644 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0054.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0056c0] Statistics: 694405 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0055.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0054c0] Statistics: 576757 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;74) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0056.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0054c0] Statistics: 657350 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0057.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0054c0] Statistics: 714558 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+frame=   45 fps= 17 q=-0.0 size=    1792kB time=00:00:00.89 bitrate=16494.5kbits/s speed=0.344x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0058.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 748261 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0059.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 761459 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0060.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005480] Statistics: 788420 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0061.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0056c0] Statistics: 801352 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0062.png' for reading
+[file @ 0x7fdf7c0056c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0057c0] Statistics: 796313 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0063.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c0059c0] Statistics: 752663 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0064.png' for reading
+[file @ 0x7fdf7c005980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005a80] Statistics: 689243 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x601 image at pos (120;73) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0065.png' for reading
+[file @ 0x7fdf7c005980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005a80] Statistics: 585902 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x598 image at pos (123;74) [area:768x768]
+frame=   53 fps= 17 q=-0.0 size=    2048kB time=00:00:01.05 bitrate=15978.3kbits/s speed=0.336x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0066.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 677817 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0067.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 738581 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0068.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 772317 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 424x545 image at pos (170;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0069.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 783326 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 425x545 image at pos (169;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0070.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 809587 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 467x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0071.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 826373 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0072.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 824578 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 517x597 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0073.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 786631 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x602 image at pos (120;72) [area:768x768]
+frame=   61 fps= 17 q=-0.0 size=    2560kB time=00:00:01.21 bitrate=17331.8kbits/s speed=0.33x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0074.png' for reading
+[file @ 0x7fdf7c004c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 726155 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x602 image at pos (120;72) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0075.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005b80] Statistics: 629921 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 516x597 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0076.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005bc0] Statistics: 714785 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0077.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c00] Statistics: 768816 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 468x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0078.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 796213 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 425x545 image at pos (169;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0079.png' for reading
+[file @ 0x7fdf7c004bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 806736 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 425x545 image at pos (169;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0080.png' for reading
+[file @ 0x7fdf7c005b00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831228 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 468x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0081.png' for reading
+[file @ 0x7fdf7c004bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831142 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+frame=   69 fps= 16 q=-0.0 size=    2816kB time=00:00:01.37 bitrate=16838.4kbits/s speed=0.324x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0082.png' for reading
+[file @ 0x7fdf7c005b40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831080 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 516x597 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0083.png' for reading
+[file @ 0x7fdf7c004bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 830634 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x602 image at pos (120;72) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0084.png' for reading
+[file @ 0x7fdf7c004bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831258 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x602 image at pos (120;72) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0085.png' for reading
+[file @ 0x7fdf7c004bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831582 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 516x597 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0086.png' for reading
+[file @ 0x7fdf7c004bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831712 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0087.png' for reading
+[file @ 0x7fdf7c004bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831330 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 468x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0088.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831329 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 425x545 image at pos (169;101) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0089.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 830931 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 425x545 image at pos (169;101) [area:768x768]
+frame=   77 fps= 16 q=-0.0 size=    3072kB time=00:00:01.53 bitrate=16448.3kbits/s speed=0.322x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0090.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 831800 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 468x569 image at pos (148;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0091.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 832055 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x587 image at pos (133;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0092.png' for reading
+[file @ 0x7fdf7c005b40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 832600 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 516x597 image at pos (123;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0093.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 832646 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x602 image at pos (120;72) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0094.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 832569 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 502x466 image at pos (122;158) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0095.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 834054 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 489x560 image at pos (123;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0096.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 834645 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 520x487 image at pos (122;146) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0097.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 836630 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 520x586 image at pos (121;85) [area:768x768]
+frame=   85 fps= 16 q=-0.0 size=    3328kB time=00:00:01.69 bitrate=16131.9kbits/s speed=0.32x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0098.png' for reading
+[file @ 0x7fdf7c0059c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 837251 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 503x514 image at pos (121;96) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0099.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 837625 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 519x531 image at pos (122;84) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0100.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 840183 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 520x528 image at pos (121;131) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0101.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c003d00] Statistics: 841426 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 498x573 image at pos (121;85) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0102.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005bc0] Statistics: 841873 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 522x582 image at pos (121;85) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0103.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005bc0] Statistics: 844402 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 520x580 image at pos (121;85) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0104.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005bc0] Statistics: 844003 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 522x585 image at pos (120;83) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0105.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005bc0] Statistics: 846665 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 521x575 image at pos (120;87) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0106.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c00] Statistics: 851042 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 520x569 image at pos (121;87) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0107.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c00] Statistics: 863270 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 521x568 image at pos (121;86) [area:768x768]
+frame=   95 fps= 16 q=-0.0 size=    3328kB time=00:00:01.89 bitrate=14424.9kbits/s speed=0.324x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0108.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005d40] Statistics: 886806 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 522x593 image at pos (121;80) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0109.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c40] Statistics: 907343 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 521x576 image at pos (121;89) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0110.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c40] Statistics: 931787 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 522x583 image at pos (121;91) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0111.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c80] Statistics: 965853 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 521x577 image at pos (121;95) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0112.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c80] Statistics: 1010508 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x578 image at pos (120;92) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0113.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c40] Statistics: 1072950 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 521x598 image at pos (121;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0114.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c40] Statistics: 1134153 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 523x576 image at pos (120;97) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0115.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c40] Statistics: 1185904 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 521x594 image at pos (121;79) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0116.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c40] Statistics: 1192339 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 522x596 image at pos (121;75) [area:768x768]
+frame=  104 fps= 16 q=-0.0 size=    3584kB time=00:00:02.07 bitrate=14183.6kbits/s speed=0.326x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0117.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c80] Statistics: 1148215 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 522x597 image at pos (121;76) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0118.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005c80] Statistics: 1031343 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 522x595 image at pos (121;78) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0119.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005cc0] Statistics: 918086 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 647x598 image at pos (121;75) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0120.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005cc0] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x600 image at pos (0;74) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0121.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005d00] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x600 image at pos (0;74) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0122.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005b00] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x673 image at pos (0;0) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0123.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005cc0] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x673 image at pos (0;0) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0124.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005cc0] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x673 image at pos (0;0) [area:768x768]
+frame=  112 fps= 16 q=-0.0 size=    3840kB time=00:00:02.23 bitrate=14106.4kbits/s speed=0.325x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0125.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005cc0] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x674 image at pos (0;0) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0126.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005cc0] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x673 image at pos (0;0) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0127.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e00] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x673 image at pos (0;0) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0128.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e00] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 768x674 image at pos (0;0) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0129.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e00] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 757x674 image at pos (11;0) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0130.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 689x674 image at pos (38;0) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0131.png' for reading
+[file @ 0x7fdf7c005d00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005440] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 624x659 image at pos (70;14) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0132.png' for reading
+[file @ 0x7fdf7c005d00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005480] Statistics: 667235 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 548x596 image at pos (108;58) [area:768x768]
+frame=  120 fps= 16 q=-0.0 size=    4608kB time=00:00:02.39 bitrate=15794.5kbits/s speed=0.324x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0133.png' for reading
+[file @ 0x7fdf7c005480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005d00] Statistics: 666991 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 518x574 image at pos (121;78) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0134.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667071 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0135.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 666959 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0136.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667428 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0137.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e80] Statistics: 667219 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0138.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005ec0] Statistics: 667087 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0139.png' for reading
+[file @ 0x7fdf7c005440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005ec0] Statistics: 667087 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0140.png' for reading
+[file @ 0x7fdf7c004f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667319 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0141.png' for reading
+[file @ 0x7fdf7c004f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667261 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0142.png' for reading
+[file @ 0x7fdf7c004f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667182 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+frame=  130 fps= 16 q=-0.0 size=    4608kB time=00:00:02.59 bitrate=14574.8kbits/s speed=0.327x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0143.png' for reading
+[file @ 0x7fdf7c004f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667254 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0144.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667248 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0145.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667392 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0146.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e40] Statistics: 667392 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 64x304 image at pos (314;200) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0147.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005e80] Statistics: 667502 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 261x348 image at pos (242;254) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0148.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005ec0] Statistics: 667281 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 185x298 image at pos (237;125) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0149.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005fc0] Statistics: 667258 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 335x448 image at pos (221;178) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0150.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005f80] Statistics: 667388 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 381x345 image at pos (125;182) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0151.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005fc0] Statistics: 667172 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 486x525 image at pos (143;121) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0152.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005fc0] Statistics: 667181 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+frame=  140 fps= 17 q=-0.0 size=    4608kB time=00:00:02.79 bitrate=13530.0kbits/s speed=0.331x    [image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0153.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005fc0] Statistics: 667317 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 303x102 image at pos (327;255) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0154.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005f80] Statistics: 667317 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 396x340 image at pos (229;196) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0155.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005f80] Statistics: 666995 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 340x329 image at pos (211;265) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0156.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005f80] Statistics: 667152 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 493x452 image at pos (137;207) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0157.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005f80] Statistics: 666959 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 497x536 image at pos (134;134) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0158.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005f80] Statistics: 667187 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 407x215 image at pos (212;209) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0159.png' for reading
+[file @ 0x7fdf7c005a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c2a85c0] Statistics: 667187 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[image2 @ 0x563198e675c0] Opening '/home/simson/Documents/Blender-Projects/FSDC/frame0160.png' for reading
+[file @ 0x7fdf7c2a85c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0x7fdf7c005fc0] Statistics: 667113 bytes read, 0 seeks
+[gif @ 0x563198e7f340] 333x203 image at pos (210;262) [area:768x768]
+[gif @ 0x563198e7f340] 304x477 image at pos (253;174) [area:768x768]
+[gif @ 0x563198e7f340] 412x511 image at pos (160;146) [area:768x768]
+frame=  150 fps= 17 q=-0.0 size=    4608kB time=00:00:02.99 bitrate=12625.0kbits/s speed=0.334x    [gif @ 0x563198e7f340] 236x431 image at pos (220;75) [area:768x768]
+[gif @ 0x563198e7f340] 44x215 image at pos (217;244) [area:768x768]
+[gif @ 0x563198e7f340] 495x473 image at pos (146;175) [area:768x768]
+[gif @ 0x563198e7f340] 381x320 image at pos (210;175) [area:768x768]
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+[gif @ 0x563198e7f340] 362x466 image at pos (175;161) [area:768x768]
+[gif @ 0x563198e7f340] 438x384 image at pos (144;175) [area:768x768]
+[gif @ 0x563198e7f340] 400x536 image at pos (173;96) [area:768x768]
+[gif @ 0x563198e7f340] 95x442 image at pos (480;175) [area:768x768]
+[gif @ 0x563198e7f340] 1x1 image at pos (767;767) [area:768x768]
+frame=  160 fps= 17 q=-0.0 size=    4608kB time=00:00:03.19 bitrate=11833.5kbits/s speed=0.337x    [gif @ 0x563198e7f340] 274x557 image at pos (159;89) [area:768x768]
+[Parsed_paletteuse_0 @ 0x563198ed56c0] [framesync @ 0x563198ed57c8] Sync level 0
+[out_0_0 @ 0x563198f58540] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=  161 fps= 17 q=-0.0 Lsize=    4780kB time=00:00:03.21 bitrate=12199.3kbits/s speed=0.335x    
+[AVIOContext @ 0x563198e67380] Statistics: 0 seeks, 19 writeouts
+video:4780kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000409%
+Input file #0 (/home/simson/Documents/Blender-Projects/FSDC/frame%04d.png):
+  Input stream #0:0 (video): 161 packets read (123343474 bytes); 161 frames decoded; 
+  Total: 161 packets (123343474 bytes) demuxed
+Input file #1 (/home/simson/Documents/Blender-Projects/FSDC/palette.png):
+  Input stream #1:0 (video): 1 packets read (962 bytes); 1 frames decoded; 
+  Total: 1 packets (962 bytes) demuxed
+Output file #0 (/home/simson/Documents/Blender-Projects/FSDC/Evee.gif):
+  Output stream #0:0 (video): 161 frames encoded; 161 packets muxed (4894939 bytes); 
+  Total: 161 packets (4894939 bytes) muxed
+162 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0x563198e7c400] Statistics: 0 seeks, 19 writeouts
+[AVIOContext @ 0x563198e6d200] Statistics: 962 bytes read, 0 seeks
